@@ -25,10 +25,10 @@ public class MainManu extends JFrame {
     private JButton rlVendas;
     private JButton rlFornecedor;
     private JButton vitrineProdutos;
-    private JButton vendasButton;
     private JTabbedPane tabbedPane2;
     private JTabbedPane tabbedPane3;
     private JButton funcionariosButton1;
+    private JButton rlFornecedores;
 
     public MainManu() {
         setTitle("Menu Principal");

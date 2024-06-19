@@ -16,7 +16,7 @@ class Produtos {
         this.idProduto = idProduto;
     }
 
-    // Get e set
+    // Getters e Setters
     public String getDescricao() {
         return descricao;
     }

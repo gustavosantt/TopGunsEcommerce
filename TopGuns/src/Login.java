@@ -93,8 +93,6 @@ public class Login extends JFrame {
 }
 
 class MainMenu extends JFrame {
-    private JTabbedPane tabbedPane1;
-
     public MainMenu() {
         setTitle("Main Menu");
         setSize(400, 300);
