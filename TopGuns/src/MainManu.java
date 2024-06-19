@@ -69,7 +69,7 @@ public class MainManu extends JFrame {
 
 
         // Adiciona os botões aos painel
-        // Botões Cadastro
+        // Botõoes Cadastro
         cadastrosPanel.add(clientesButton);
         cadastrosPanel.add(funcionariosButton);
         cadastrosPanel.add(produtosButton);
@@ -130,14 +130,6 @@ public class MainManu extends JFrame {
             }
         });
 
-        produtosButton1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                handleProdutosButton1();
-            }
-        });
-
-        // Eventos dos botões relatorio
         rlEstoque.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -145,30 +137,10 @@ public class MainManu extends JFrame {
             }
         });
 
-        rlFuncionarios.addActionListener(new ActionListener() {
+        produtosButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                handleEstoqueButton();
-            }
-        });
-
-        rlVendas.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                handleEstoqueButton();
-            }
-        });
-
-        rlFornecedor.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                handleEstoqueButton();
-            }
-        });
-        rlClientes.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                handleEstoqueButton();
+                handleProdutosButton1();
             }
         });
     }
