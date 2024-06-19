@@ -1,0 +1,6 @@
+Nome: ovo
+Id Produto: 45
+Tipo: chat gpt
+Descrição: sou foda
+Preço: 2.75
+Quantidade em Estoque: 8
