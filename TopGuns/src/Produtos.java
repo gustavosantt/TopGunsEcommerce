@@ -65,6 +65,7 @@ class Produtos {
         this.idProduto = idProduto;
     }
 
+
     @Override
     public String toString() {
         return "Nome: " + nome + "\nId Produto: " + idProduto + "\nTipo: " + tipo + "\nDescrição: " + descricao + "\nPreço: " + preco + "\nQuantidade em Estoque: " + quantEstoq;

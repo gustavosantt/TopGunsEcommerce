@@ -154,6 +154,7 @@ public class CadastroFornecedores extends JFrame {
         // Cria um novo fornecedor com todos os parâmetros necessários
         Fornecedores fornecedor = new Fornecedores(id, nome, telefone, endereco, email, cnpj);
 
+        // Salva arquivo em txt dos dados adicionados pelo usuario.
         String path = "fornecedores.txt";
         salvarNoArquivo(fornecedor, path);
 

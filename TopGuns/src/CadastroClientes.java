@@ -167,6 +167,7 @@ public class CadastroClientes extends JFrame {
 
         Clientes cliente = new Clientes(nome, telefone, cpf, rg, endereco, email, autorizacao);
 
+        // Salva arquivo em txt dos dados adicionados pelo usuario.
         String path = "clientes.txt";
         salvarNoArquivo(cliente, path);
 
