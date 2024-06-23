@@ -45,9 +45,6 @@ public class Venda extends JFrame {
         panel.add(createProductPanel("Tysoon R$ 9.000,00", "C:\\Users\\Gustavo Henrique\\Downloads\\TopGuns\\TopGuns\\src\\Imagens\\Typhoon.PNG", CompraButton));
         panel.add(createProductPanel("DESERTE EAGLE R$ 9.500,00", "C:\\Users\\Gustavo Henrique\\Downloads\\TopGuns\\TopGuns\\src\\Imagens\\DESERT EAGLE.PNG", comprarButton2));
 
-
-
-
         valorCompra = new JPanel();
         valorCompra.setLayout(new BoxLayout(valorCompra, BoxLayout.Y_AXIS));
         valorCompra.add(totalLabel);
@@ -92,7 +89,9 @@ public class Venda extends JFrame {
         finalizarCompra.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Compra finalizada! Total: R$ " + totalValue);
+                // Mostrar a tela de escolha de pagamento
+                new EscolhaPagamento().setVisible(true);
+                // Redefinir o total da compra
                 totalValue = 0.0;
                 updateTotal();
             }
