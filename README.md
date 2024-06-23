@@ -1,4 +1,4 @@
-# Loja de Armas
+# TopGuns
 
 Bem-vindo ao repositório do projeto Loja de Armas. Este projeto é uma aplicação em Java para gerenciar uma loja de armas, incluindo funcionalidades para cadastro de clientes, fornecedores, funcionários e produtos, além da realização de vendas.
 
