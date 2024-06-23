@@ -16,7 +16,7 @@ public class Fornecedores extends Pessoas {
         this.cnpj = cnpj;
     }
 
-    // Getters e Setters
+    // Gett e sett
     public String getId() {
         return id;
     }
