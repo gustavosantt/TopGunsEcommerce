@@ -21,6 +21,7 @@ public class CadastroFuncionarios extends JFrame {
     private JButton limparButton;
     private JButton salvarButton;
     private JButton cancelarButton;
+    private MainManu mainManu; // Referência para o menu principal
 
     public CadastroFuncionarios() {
         setTitle("Cadastro de Funcionários");
@@ -137,6 +138,7 @@ public class CadastroFuncionarios extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose(); // Fecha a janela do cadastro de funcionários
+                mainManu.setVisible(true); // Exibe o menu principal
             }
         });
     }
@@ -186,7 +188,11 @@ public class CadastroFuncionarios extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new CadastroFuncionarios().setVisible(true);
+                MainManu mainManu = new MainManu(); // Crie uma instância do menu principal
+                CadastroFuncionarios cadastroFuncionarios = new CadastroFuncionarios();
+                cadastroFuncionarios.mainManu = mainManu; // Defina a referência para o menu principal
+                cadastroFuncionarios.setVisible(true);
+                mainManu.setVisible(false); // Esconda o menu principal inicialmente
             }
         });
     }

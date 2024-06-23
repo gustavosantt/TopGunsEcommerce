@@ -162,7 +162,7 @@ public class CadastroProdutos extends JFrame {
 
         Produtos produto = new Produtos(descricao, tipo, preco, quantEstoq, nome, idProduto);
 
-        // Salva arquivo em txt dos dados adicionados pelo usuario.
+        // Criar Txt
         String path = "produtos.txt";
         try (BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path, true))) {
             buffWrite.append(produto.toString());
