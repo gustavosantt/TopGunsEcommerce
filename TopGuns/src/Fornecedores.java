@@ -1,4 +1,6 @@
-public class Fornecedores extends Pessoas {
+import javax.swing.*;
+
+public class Fornecedores extends JFrame {
     private String id;
     private String nome;
     private String telefone;

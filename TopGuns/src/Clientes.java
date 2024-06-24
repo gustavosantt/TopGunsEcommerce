@@ -1,4 +1,6 @@
-public class Clientes extends Pessoas {
+import javax.swing.*;
+
+public class Clientes extends JFrame {
     private String nome;
     private String telefone;
     private String cpf;
